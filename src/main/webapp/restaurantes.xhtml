@@ -18,30 +18,31 @@
 		
 		<f:facet name="{Exporters}">
        <div class="flex justify-content-between">
-            
-                <p:commandButton value="XLS" styleClass="mr-2 mb-2">
-                    <p:dataExporter type="xls" src="img/xlsx.png" target="tblRestaurantes" fileName="ReporteEmpleados"/>
-                </p:commandButton>
+    
+                <h:commandLink>
+                <p:graphicImage library="img" name="xlsx.png" width="40" />
+                    <p:dataExporter type="xls" target="tblRestaurantes" fileName="ReporteEmpleados"/>
+                </h:commandLink>
 
-                <p:commandButton value="XLSX" styleClass="mr-2 mb-2">
-                    <p:dataExporter type="xlsxstream" target="tblRestaurantes" fileName="ReporteEmpleados"/>
-                </p:commandButton>
-
-                <p:commandButton value="PDF" styleClass="mr-2 mb-2" >
+                <h:commandLink>
+                <p:graphicImage library="img" name="pdf.png" width="40" />
                     <p:dataExporter type="pdf" target="tblRestaurantes" fileName="Restaurants"/>
-                </p:commandButton>
+                </h:commandLink>
 
-                <p:commandButton value="CSV" styleClass="mr-2 mb-2">
+                <h:commandLink>
+                <p:graphicImage library="img" name="csv.png" width="40" />
                     <p:dataExporter type="csv" target="tblRestaurantes" fileName="Restaurants" />
-                </p:commandButton>
+                </h:commandLink>
 
-                <p:commandButton value="XML" styleClass="mr-2 mb-2">
+                <h:commandLink>
+                <p:graphicImage library="img" name="xml.png" width="40" />
                     <p:dataExporter type="xml" target="tblRestaurantes" fileName="Restaurants"/>
-                </p:commandButton>
+                </h:commandLink>
 
-                <p:commandButton value="TXT" styleClass="mr-2 mb-2">
+                <h:commandLink>
+                <p:graphicImage library="img" name="excel.png" width="40" />
                     <p:dataExporter type="txt" target="tblRestaurantes" fileName="Restaurants" />
-                </p:commandButton>
+                </h:commandLink>
             </div> 
             </f:facet>
 		
